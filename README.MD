@@ -1,1 +1,2 @@
-letsgo
+npm install
+npm start
