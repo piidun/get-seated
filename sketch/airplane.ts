@@ -1,6 +1,6 @@
 class Airplane {
     colGroups = 2;
-    colGroupSpacing = 16;
+    colGroupSpacing = 32;
     seatsEachColGroup = 3;
     rowGap = 16;
     colGap = 2;
