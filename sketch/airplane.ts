@@ -4,7 +4,7 @@ class Airplane {
     seatsEachColGroup = 3;
     rowGap = 16;
     colGap = 2;
-    rows = 8;
+    rows = 4;
     seats: AirplaneSeat[] = [];
 
     constructor() {
