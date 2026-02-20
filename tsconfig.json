@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "module": "none",
-    "noImplicitAny": true,
-    "outFile": "./build/build.js",
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "rootDir": "./sketch/",
-    "sourceMap": true,
-    "target": "es2015",
-    "lib": ["es2015", "dom"],
-    "moduleResolution": "node"
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "target": "es2022",
+    "lib": ["ES2022", "dom"],
+
+    "outDir": "./build/",
+    "rootDir": "./source/",
+
+    "strict": true
   }
 }
