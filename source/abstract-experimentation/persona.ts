@@ -104,9 +104,9 @@ const Barftholomew: Persona = {
 };
 
 const InaMeeting: Persona = {
-  conversationStartingStrength: 0.2,
-  conversationStartingDefense: 0.8,
-  conversationIntensityContribution: 0.1,
+  conversationStartingStrength: 0.0,
+  conversationStartingDefense: 0.5,
+  conversationIntensityContribution: 0.8,
   idleComfortChange: 0.8,
   ownConversationComfortFactor: -0.8,
   noiseComfortFactor: -1.0,
