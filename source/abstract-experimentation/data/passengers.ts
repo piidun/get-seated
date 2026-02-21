@@ -132,7 +132,7 @@ const partyBroPersonality: Personality = {
   conversationStartingStrength: 1.0,
   conversationStartingDefense: 0.0,
   conversationIntensityContribution: 1.0,
-  idleComfortChange: 0.8,
+  idleComfortChange: 0.1,
   ownConversationComfortFactor: 0.8,
   noiseComfortFactor: 0.0, // they don't mind noise
 };
