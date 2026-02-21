@@ -34,9 +34,9 @@ export type ConversationResultEvent = {
 
 export type IdleResultEvent = {
   readonly type: "idle result";
-  readonly subjectIndex: number;
-  readonly subjectComfortLevel: number;
-  readonly subjectComfortLevelChange: number;
+  readonly passengerIndex: number;
+  readonly passengerComfortLevel: number;
+  readonly passengerComfortLevelChange: number;
 };
 
 export type NoiseResultEvent = {
