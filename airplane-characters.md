@@ -24,8 +24,6 @@ Party Bros (already up often)
 **Mechanic**  
 If blocked twice → Stress spikes dramatically.
 
-
-
 ## Terri Fied
 
 **Core Trait**  
@@ -50,9 +48,7 @@ Slow Old Person (calm presence)
 **Mechanic**  
 None specified
 
-
-
-## Dawnte Waeckmi
+## Dawnte Wakemi
 
 **Core Trait**  
 Falls asleep immediately. Rage if woken repeatedly.
@@ -77,8 +73,6 @@ Low Temper Passenger (if both quiet)
 
 **Mechanic**  
 If woken 3 times → becomes Irritable Sleeper (mini Low Temper variant).
-
-
 
 ## Lemmy Telya
 
@@ -105,8 +99,6 @@ Hassatini Bladder
 **Mechanic**  
 If ignored too long → talks louder.
 
-
-
 ## Paige Turner
 
 **Core Trait**  
@@ -131,9 +123,7 @@ Slow Older Passenger
 **Mechanic**  
 If interrupted 3 times → passive-aggressive sigh debuff to row.
 
-
-
-## Bartholomew
+## Barftholomew
 
 **Core Trait**  
 Motion sensitive. Needs bag. Anxiety spike during turbulence.
@@ -158,9 +148,7 @@ Paige Turner
 **Mechanic**  
 If seated next to Party Bros → chance of chain vomit event.
 
-
-
-## Business Traveler
+## Ina Meeting
 
 **Core Trait**  
 Needs to work. Optimizes for quiet + efficiency. "Time is money" energy.
@@ -187,9 +175,7 @@ Low Temper Passenger
 **Mechanic**  
 None specified
 
-
-
-## Low Temper Passenger
+## Berry Fiery
 
 **Core Trait**  
 Territorial, easily annoyed, escalates quickly. Believes the armrest is his by natural law.
@@ -217,8 +203,6 @@ Business Traveler
 "Rage Threshold": has 3 strikes.  
 Each trigger adds a strike.  
 At 3 strikes he causes a row fight event that lowers happiness for everyone in same row + adjacent row.
-
-
 
 ## Slow Old Person
 
@@ -248,8 +232,6 @@ Lemmy Telya
 "Aisle Block": when person stands up or moves, the aisle in that row becomes "blocked" for 1 turn (slows deplaning + irritates certain passengers).  
 But if seated next to family/baby, he provides a small calm aura that reduces baby-cry escalation.
 
-
-
 ## Newlyweds
 
 **Core Trait**  
@@ -274,8 +256,6 @@ Party Bros
 **Mechanic**  
 None specified
 
-
-
 ## Sleepless Family (Mom, Dad, Baby)
 
 **Core Trait**  
@@ -299,8 +279,6 @@ Lemmy Telya (distraction)
 
 **Mechanic**  
 None specified
-
-
 
 ## Party Bros
 
