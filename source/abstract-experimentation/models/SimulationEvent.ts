@@ -1,14 +1,14 @@
 export type ConversationInitiationStartedEvent = {
   readonly type: "conversation initiation started";
   readonly initiatorIndex: number;
-  readonly initiatorAttack: number;
+  readonly initiatorStrength: number;
 };
 
 export type ConversationBegunEvent = {
   readonly type: "conversation begun";
   readonly intensity: number;
   readonly initiatorIndex: number;
-  readonly initiatorAttack: number;
+  readonly initiatorStrength: number;
   readonly targetIndex: number;
   readonly targetDefense: number;
 };
@@ -16,7 +16,7 @@ export type ConversationBegunEvent = {
 export type ConversationBlockedEvent = {
   readonly type: "conversation blocked";
   readonly initiatorIndex: number;
-  readonly initiatorAttack: number;
+  readonly initiatorStrength: number;
   readonly targetIndex: number;
   readonly targetDefense: number;
 };
