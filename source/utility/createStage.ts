@@ -6,7 +6,7 @@ type Tile = SeatId | "out of bounds" | "walkable";
 /**
  * Create a stage with the supplied {@link rowLayouts}.
  *
- * @param rowLayouts The layout of each row. 'X' represents out of bounds, 'S' represents a seat, '_' represents a walkable tile.
+ * @param rowLayouts The layout of each row. 'X' represents out of bounds, 'S' represents a seat, '_' represents a walkable tile. All the row layouts must be the same length.
  * @returns The {@link Stage}.
  */
 export const createStage = (rowLayouts: readonly string[]): Stage => {
