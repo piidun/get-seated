@@ -9,5 +9,6 @@
     "rootDir": "./source/",
 
     "strict": true
-  }
+  },
+  "include": ["./source/**/*"]
 }
