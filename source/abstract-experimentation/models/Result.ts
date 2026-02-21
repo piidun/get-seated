@@ -1,8 +1,8 @@
-export type Result =
+export type Result<TValue = void> =
+  | ({ readonly success: true } & (TValue extends void
+      ? {}
+      : { readonly value: TValue }))
   | {
-      success: true;
-    }
-  | {
-      success: false;
-      error: string;
+      readonly success: false;
+      readonly error: string;
     };
