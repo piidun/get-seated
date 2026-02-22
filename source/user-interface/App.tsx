@@ -4,7 +4,7 @@ import "./App.css";
 import { CharacterArea } from "./components/CharacterArea";
 import { SeatArea } from "./components/SeatArea";
 
-const App: Component = () => {
+export const App: Component = () => {
   return (
     <div class="flex flex-col items-center gap-2">
       <h1>Get seated</h1>
@@ -20,5 +20,3 @@ const App: Component = () => {
     </div>
   );
 };
-
-export default App;
