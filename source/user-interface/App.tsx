@@ -1,22 +1,20 @@
-import type { Component } from "solid-js";
-import { currentLevel } from "../business-logic/state/currentLevel";
+import { Match, Switch, type Component } from "solid-js";
 import "./App.css";
-import { CharacterArea } from "./components/CharacterArea";
-import { SeatArea } from "./components/SeatArea";
+import { HomePage } from "./pages/HomePage";
+import { LevelSelectorPage } from "./pages/LevelSelectorPage";
+import { route } from "./state/route";
 
 export const App: Component = () => {
   return (
-    <div class="flex flex-col items-center gap-2">
-      <h1>Get seated</h1>
-
-      <div class="main-grid-layout">
-        <section>
-          <CharacterArea passengers={currentLevel().passengers} />
-        </section>
-        <section>
-          <SeatArea />
-        </section>
-      </div>
-    </div>
+    <>
+      <Switch>
+        <Match when={route().route === "home"}>
+          <HomePage />
+        </Match>
+        <Match when={route().route === "level-selector"}>
+          <LevelSelectorPage />
+        </Match>
+      </Switch>
+    </>
   );
 };
