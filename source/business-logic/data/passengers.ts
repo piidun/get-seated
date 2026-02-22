@@ -216,3 +216,22 @@ export const Baby: Passenger = {
     noiseComfortFactor: -0.5,
   },
 };
+
+export const passengers = {
+  HassatiniBladder,
+  TerryFied,
+  DawnTewakemi,
+  LemmyTelya,
+  PaigeTurner,
+  Barftholomew,
+  InaMeeting,
+  BerryFieri,
+  OldMan,
+  MaxineInlove,
+  MaxInlove,
+  PartyBroOne,
+  PartyBroTwo,
+  TiredMom,
+  TiredDad,
+  Baby,
+};
