@@ -1,10 +1,12 @@
-import { Passenger } from "../models/Passenger.js";
-import { Personality } from "../models/Personality.js";
+import DudesonSprite from "../../../assets/dudeson.png";
+import WomanSprite from "../../../assets/woman.png";
+import { Passenger } from "../models/Passenger";
+import { Personality } from "../models/Personality";
 
 export const HassatiniBladder: Passenger = {
   name: "Hassatini Bladder",
   age: "32",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: {
     conversationStartingStrength: 0.2,
     conversationStartingDefense: 0.2,
@@ -18,7 +20,7 @@ export const HassatiniBladder: Passenger = {
 export const TerryFied: Passenger = {
   name: "Terry Fied",
   age: "27",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: {
     conversationStartingStrength: 0.2,
     conversationStartingDefense: 0.0,
@@ -32,7 +34,7 @@ export const TerryFied: Passenger = {
 export const DawnTewakemi: Passenger = {
   name: "Dawn Tewakemi",
   age: "56",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: {
     conversationStartingStrength: 0.0,
     conversationStartingDefense: 1.0,
@@ -46,7 +48,7 @@ export const DawnTewakemi: Passenger = {
 export const LemmyTelya: Passenger = {
   name: "Lemmy Telya",
   age: "47",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: {
     conversationStartingStrength: 1.0,
     conversationStartingDefense: 0.0,
@@ -60,7 +62,7 @@ export const LemmyTelya: Passenger = {
 export const PaigeTurner: Passenger = {
   name: "Paige Turner",
   age: "53",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: {
     conversationStartingStrength: 0.2,
     conversationStartingDefense: 0.7,
@@ -74,7 +76,7 @@ export const PaigeTurner: Passenger = {
 export const Barftholomew: Passenger = {
   name: "Barftholomew",
   age: "22",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: {
     conversationStartingStrength: 0.2,
     conversationStartingDefense: 0.2,
@@ -88,7 +90,7 @@ export const Barftholomew: Passenger = {
 export const InaMeeting: Passenger = {
   name: "Ina Meeting",
   age: "43",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: {
     conversationStartingStrength: 0.0,
     conversationStartingDefense: 0.5,
@@ -102,7 +104,7 @@ export const InaMeeting: Passenger = {
 export const BerryFieri: Passenger = {
   name: "Berry Fieri",
   age: "36",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: {
     conversationStartingStrength: 0.2,
     conversationStartingDefense: 0.2,
@@ -116,7 +118,7 @@ export const BerryFieri: Passenger = {
 export const OldMan: Passenger = {
   name: "Clarence",
   age: "83",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: {
     conversationStartingStrength: 0.8,
     conversationStartingDefense: 0.0,
@@ -139,14 +141,14 @@ const newlywedPersonality: Personality = {
 export const MaxineInlove: Passenger = {
   name: "Maxine Inlove",
   age: "29",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: newlywedPersonality,
 };
 
 export const MaxInlove: Passenger = {
   name: "Max Inlove",
   age: "33",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: newlywedPersonality,
 };
 
@@ -162,21 +164,21 @@ const partyBroPersonality: Personality = {
 export const PartyBroOne: Passenger = {
   name: "PartyBroOne",
   age: "24",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: partyBroPersonality,
 };
 
 export const PartyBroTwo: Passenger = {
   name: "PartyBroTwo",
   age: "24",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: partyBroPersonality,
 };
 
 export const TiredMom: Passenger = {
   name: "TiredMom",
   age: "28",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: {
     conversationStartingStrength: 0.5,
     conversationStartingDefense: 0.1,
@@ -190,7 +192,7 @@ export const TiredMom: Passenger = {
 export const TiredDad: Passenger = {
   name: "TiredDad",
   age: "30",
-  avatar: "/assets/woman.png",
+  avatar: DudesonSprite,
   personality: {
     conversationStartingStrength: 0.2,
     conversationStartingDefense: 0.2,
@@ -204,7 +206,7 @@ export const TiredDad: Passenger = {
 export const Baby: Passenger = {
   name: "Baby",
   age: "0",
-  avatar: "/assets/woman.png",
+  avatar: WomanSprite,
   personality: {
     conversationStartingStrength: 0.0,
     conversationStartingDefense: 0.0,

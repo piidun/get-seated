@@ -1,4 +1,4 @@
-import { SimulationEvent } from "./SimulationEvent.js";
+import { SimulationEvent } from "./SimulationEvent";
 
 export type SimulationResult = {
   readonly score: number;

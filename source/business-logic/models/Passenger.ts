@@ -1,4 +1,4 @@
-import { Personality } from "./Personality.js";
+import { Personality } from "./Personality";
 
 export type Passenger = {
   readonly name: string;

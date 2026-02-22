@@ -1,1 +1,22 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+20&family=Rubik+Bubbles&display=swap");
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2a579b;
+  background: linear-gradient(
+    180deg,
+    rgba(42, 87, 155, 1) 0%,
+    rgba(85, 138, 194, 1) 50%,
+    rgba(214, 243, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}

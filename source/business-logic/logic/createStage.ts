@@ -1,5 +1,5 @@
 import { Map } from "immutable";
-import { SeatConnections, SeatId, Stage } from "../models/Stage.js";
+import { SeatConnections, SeatId, Stage } from "../models/Stage";
 
 type Tile = SeatId | "out of bounds" | "walkable";
 

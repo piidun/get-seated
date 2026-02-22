@@ -1,9 +1,9 @@
-import { Layout } from "../models/Layout.js";
-import { Level } from "../models/Level.js";
-import { Result } from "../models/Result.js";
-import { SimulationEvent } from "../models/SimulationEvent.js";
-import { SimulationResult } from "../models/SimulationResult.js";
-import { ensureLayoutValidForLevel } from "./ensureLayoutValidForLevel.js";
+import { Layout } from "../models/Layout";
+import { Level } from "../models/Level";
+import { Result } from "../models/Result";
+import { SimulationEvent } from "../models/SimulationEvent";
+import { SimulationResult } from "../models/SimulationResult";
+import { ensureLayoutValidForLevel } from "./ensureLayoutValidForLevel";
 
 const unitClamp = (value: number) => Math.max(-1, Math.min(value, 1));
 

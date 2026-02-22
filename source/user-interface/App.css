@@ -1,0 +1,12 @@
+h1 {
+  color: white;
+  font-family: "Rubik Bubbles", system-ui;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.main-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}

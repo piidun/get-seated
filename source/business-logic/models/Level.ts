@@ -1,5 +1,5 @@
-import { Passenger } from "./Passenger.js";
-import { Stage } from "./Stage.js";
+import { Passenger } from "./Passenger";
+import { Stage } from "./Stage";
 
 export type Level = {
   readonly passengers: readonly Passenger[];

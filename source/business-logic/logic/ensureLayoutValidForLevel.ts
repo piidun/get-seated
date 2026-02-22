@@ -1,6 +1,6 @@
-import { Layout } from "../models/Layout.js";
-import { Level } from "../models/Level.js";
-import { Result } from "../models/Result.js";
+import { Layout } from "../models/Layout";
+import { Level } from "../models/Level";
+import { Result } from "../models/Result";
 
 /**
  * Ensure that the supplied {@link layout} is valid for the supplied {@link level}.
