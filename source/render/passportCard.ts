@@ -16,7 +16,7 @@ export const renderPassportCards = (level: Level) => {
         </div>
 
         <div class="passport-body">
-          <div class="passport-photo"></div>
+          <div class="passport-photo"><img src="${passenger.avatar}" alt="Passenger avatar"></div>
 
           <div class="passport-info">
             <div class="passport-name">${passenger.name}</div>
