@@ -13,10 +13,12 @@ export type SeatConnections = {
   readonly leftFar: SeatId | null;
   readonly hallConnection: { readonly thruSeat: SeatId } | "direct";
 };
+export type Tile = SeatId | "out of bounds" | "walkable";
 
 /**
  * A mechanical representation of a stage.
  */
 export type Stage = {
   readonly seatConnectionsMap: Map<SeatId, SeatConnections>;
+  readonly tileMatrix: readonly (readonly Tile[])[];
 };

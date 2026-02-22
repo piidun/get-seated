@@ -1,7 +1,5 @@
 import { Map } from "immutable";
-import { SeatConnections, SeatId, Stage } from "../models/Stage";
-
-type Tile = SeatId | "out of bounds" | "walkable";
+import { SeatConnections, SeatId, Stage, Tile } from "../models/Stage";
 
 /**
  * Create a stage with the supplied {@link rowLayouts}.
@@ -39,10 +37,10 @@ export const createStage = (rowLayouts: readonly string[]): Stage => {
       return seatIdGenerator.next().value; // 'S'
     });
 
-  const matrix: readonly (readonly Tile[])[] = rowLayouts.map(tilesForRow);
+  const tileMatrix: readonly (readonly Tile[])[] = rowLayouts.map(tilesForRow);
 
   const seatConnectionsMap: Map<SeatId, SeatConnections> = Map(
-    matrix
+    tileMatrix
       .flatMap((row, rowIndex) =>
         row.map((tile, colIndex) => ({ tile, rowIndex, colIndex })),
       )
@@ -51,7 +49,7 @@ export const createStage = (rowLayouts: readonly string[]): Stage => {
           typeof cell.tile === "number",
       )
       .map(({ tile: seatId, rowIndex, colIndex }) => {
-        const row = matrix[rowIndex];
+        const row = tileMatrix[rowIndex];
 
         const leftWalkableDist = (() => {
           const i = row
@@ -90,12 +88,12 @@ export const createStage = (rowLayouts: readonly string[]): Stage => {
         return [
           seatId,
           {
-            frontClose: seatOrNull(matrix[rowIndex - 1]?.[colIndex]),
-            frontFar: seatOrNull(matrix[rowIndex - 2]?.[colIndex]),
+            frontClose: seatOrNull(tileMatrix[rowIndex - 1]?.[colIndex]),
+            frontFar: seatOrNull(tileMatrix[rowIndex - 2]?.[colIndex]),
             rightClose: seatOrNull(row[colIndex + 1]),
             rightFar: seatOrNull(row[colIndex + 2]),
-            backClose: seatOrNull(matrix[rowIndex + 1]?.[colIndex]),
-            backFar: seatOrNull(matrix[rowIndex + 2]?.[colIndex]),
+            backClose: seatOrNull(tileMatrix[rowIndex + 1]?.[colIndex]),
+            backFar: seatOrNull(tileMatrix[rowIndex + 2]?.[colIndex]),
             leftClose: seatOrNull(row[colIndex - 1]),
             leftFar: seatOrNull(row[colIndex - 2]),
             hallConnection,
@@ -104,5 +102,5 @@ export const createStage = (rowLayouts: readonly string[]): Stage => {
       }),
   );
 
-  return { seatConnectionsMap };
+  return { seatConnectionsMap, tileMatrix };
 };
