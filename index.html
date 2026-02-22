@@ -1,23 +1,15 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <script type="importmap">
-      {
-        "imports": {
-          "immutable": "https://cdn.jsdelivr.net/npm/immutable@5.1.4/+esm"
-        }
-      }
-    </script>
-    <script type="module" src="/build/main.js"></script>
-    <link rel="stylesheet" href="main.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Get Seated</title>
   </head>
   <body>
-    <h1>Get seated</h1>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 
-    <main class="main-grid-layout">
-      <section>
-        <div class="character-container"></div>
-      </section>
-      <section><div class="seat-container"></div></section>
-    </main>
+    <script src="/source/user-interface/index.tsx" type="module"></script>
   </body>
 </html>

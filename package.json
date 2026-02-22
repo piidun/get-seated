@@ -2,15 +2,22 @@
   "name": "get-seated",
   "version": "1.0.0",
   "description": "A Game for Brackeys Game Jam 2026.1",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc --watch",
-    "serve": "http-server -c-1 -o"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "homepage": "https://github.com/Gaweph/p5-typescript-starter#readme",
   "devDependencies": {
-    "http-server": "14.1.1",
+    "@tailwindcss/vite": "4.1.13",
+    "tailwindcss": "4.1.13",
+    "typescript": "5.9.3",
+    "vite": "7.1.4",
+    "vite-plugin-solid": "2.11.8"
+  },
+  "dependencies": {
     "immutable": "5.1.4",
-    "typescript": "5.9.3"
+    "solid-js": "1.9.9"
   }
 }

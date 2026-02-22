@@ -1,14 +1,20 @@
 {
   "compilerOptions": {
-    "module": "es2022",
+    // General
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "target": "ESNext",
+
+    // Modules
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "module": "ESNext",
     "moduleResolution": "bundler",
-    "target": "es2022",
-    "lib": ["ES2022", "dom"],
+    "noEmit": true,
 
-    "outDir": "./build/",
-    "rootDir": "./source/",
-
-    "strict": true
-  },
-  "include": ["./source/**/*"]
+    // Type Checking & Safety
+    "strict": true,
+    "types": ["vite/client"]
+  }
 }
